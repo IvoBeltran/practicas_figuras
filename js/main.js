@@ -33,13 +33,24 @@ function abajo (){
     figure.style.background = "#000000ff";
 }
 
+function izquierda(){
+    figure.classList.toggle("left");
+    figure.style.background = "#000000ff";
+
+
+// }
+// function derecha(){
+//     figure.classList.toggle("right");
+//     figure.style.background = "#dc96dfff";
+
+// }
 
 
 
 
 
 
-
+}
 
 
 
@@ -54,6 +65,8 @@ document.getElementById('btnGif').addEventListener('click', gif ); // gif
 document.getElementById('btnAnim').addEventListener('click', animacion ); // animacion a la figura 
 document.getElementById('btnMoveUp').addEventListener('click', arriba); // figura hacia arriba 
 document.getElementById('btnMoveDown').addEventListener('click', abajo);  // figura hacia abajo 
+document.getElementById('btnMoveLeft').addEventListener('click' , izquierda);  // figura a la izquierda 
+document.getElementById('btnMoveRight').addEventListener('click', derecha); // figura a la derecha 
 
     
 })

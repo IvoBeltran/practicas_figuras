@@ -122,3 +122,11 @@ img{
 #figure.down{
   transform: translateY(150PX);
 }
+
+#figure.left{
+  transform: translateX(-150px);
+}
+/* 
+#figure.right{
+  transform: translateX(150PX);
+} */
