@@ -159,6 +159,23 @@ function cambiarAlt(){
     imagen.setAttribute('alt', text)
 }
 
+function cambiarHref(){
+    const newHref = prompt('Ingresa una nueva URL: ')
+    const link = document.getElementById('mainLink')
+    link.setAttribute('href', newHref)
+}
+
+
+function abrirPestana() {
+     const link = document.getElementById('mainLink')
+    link.setAttribute("target", "_blank");
+    link.setAttribute("href", "https://github.com/IvoBeltran")
+   
+
+}
+
+
+
 
 
 
@@ -187,6 +204,9 @@ document.getElementById('btnChangeImageNext').addEventListener('click', imageNex
 document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt );
 document.getElementById('btnToggleImage').addEventListener('click', toggleImage );
 document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
+document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
+document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
+document.getElementById('btnOpenLink').addEventListener('click', abrirPestana);
 
 })
 
