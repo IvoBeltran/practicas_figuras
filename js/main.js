@@ -174,7 +174,9 @@ function abrirPestana() {
 
 }
 
-
+function desLink() {
+    link.removeAttribute("href"); 
+}
 
 
 
@@ -207,6 +209,7 @@ document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
 document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
 document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
 document.getElementById('btnOpenLink').addEventListener('click', abrirPestana);
+document.getElementById('btnDisableLink').addEventListener('click', desLink);
 
 })
 
