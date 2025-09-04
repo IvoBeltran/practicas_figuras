@@ -65,6 +65,16 @@ function parrafo(){
     }
 }
 
+function agregarParrafo(){
+    const adicionar = document.getElementById('extraParagraphs')
+    const agregar= prompt("Escribe el texto para el nuevo párrafo")
+
+    if (agregar) {
+        adicionar.textContent = agregar;
+    }
+}
+
+
 
 
 
@@ -85,7 +95,7 @@ document.getElementById('btnMoveLeft').addEventListener('click' , izquierda);  /
 document.getElementById('btnMoveRight').addEventListener('click', derecha); // figura a la derecha 
 document.getElementById('btnChangeTitle').addEventListener('click', titulo );
 document.getElementById('btnChangeParagraph').addEventListener('click', parrafo ); // cambiar parrafo 
-    
+document.getElementById('btnChangeParagraph').addEventListener('click', agregarParrafo);
 })
 
 
