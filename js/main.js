@@ -22,15 +22,34 @@ function animacion(){
     figure.classList.add('animado');
 
 }
+function arriba (){
+    figure.classList.toggle("top");
+    figure.style.background = "#000000ff";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
-    document.getElementById('btnCircle').addEventListener('click', circulo); // CIRCULOOO 
 
+
+document.getElementById('btnCircle').addEventListener('click', circulo); // CIRCULOOO 
 document.getElementById('btnStar').addEventListener('click', estrella ); // ESTRELLA 
+document.getElementById('btnGif').addEventListener('click', gif ); // gif 
+document.getElementById('btnAnim').addEventListener('click', animacion ); // animacion a la figura 
+document.getElementById('btnMoveUp').addEventListener('click', arriba); // figura hacia arriba 
 
-document.getElementById('btnGif').addEventListener('click', gif );
 
-document.getElementById('btnAnim').addEventListener('click', animacion );
     
 })
 
