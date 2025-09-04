@@ -12,12 +12,16 @@ function estrella(){
 
 }
 function gif(){
-    figure.style.backgroundImage = "url('img/gif.gif)";
+    figure.style.backgroundImage = "url('img/minions.gif')";
     figure.style.backgroundSize = 'cover';
  
    }
 
 
+function animacion(){
+    figure.classList.add('animado');
+
+}
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo); // CIRCULOOO 
@@ -26,6 +30,7 @@ document.getElementById('btnStar').addEventListener('click', estrella ); // ESTR
 
 document.getElementById('btnGif').addEventListener('click', gif );
 
+document.getElementById('btnAnim').addEventListener('click', animacion );
     
 })
 
