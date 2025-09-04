@@ -154,10 +154,10 @@ function toggleImage() {
         imagen.style.display = "none";
     }
 }
-// function cambiarAlt(){
-//     const text = prompt('Ingresa un texto: ')
-//     imagen.setAttribute('alt', text)
-// }
+function cambiarAlt(){
+    const text = prompt('Ingresa un texto: ')
+    imagen.setAttribute('alt', text)
+}
 
 
 
