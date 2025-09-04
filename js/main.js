@@ -38,19 +38,19 @@ function izquierda(){
     figure.style.background = "#000000ff";
 
 
-// }
-// function derecha(){
-//     figure.classList.toggle("right");
-//     figure.style.background = "#dc96dfff";
-
-// }
-
-
-
-
-
+}
+function derecha(){
+    figure.classList.toggle("right");
+    figure.style.background = "#dc96dfff";
 
 }
+
+
+
+
+
+
+
 
 
 
