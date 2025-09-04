@@ -28,6 +28,11 @@ function arriba (){
 }
 
 
+function abajo (){
+    figure.classList.toggle("down");
+    figure.style.background = "#000000ff";
+}
+
 
 
 
@@ -48,7 +53,7 @@ document.getElementById('btnStar').addEventListener('click', estrella ); // ESTR
 document.getElementById('btnGif').addEventListener('click', gif ); // gif 
 document.getElementById('btnAnim').addEventListener('click', animacion ); // animacion a la figura 
 document.getElementById('btnMoveUp').addEventListener('click', arriba); // figura hacia arriba 
-
+document.getElementById('btnMoveDown').addEventListener('click', abajo);  // figura hacia abajo 
 
     
 })
