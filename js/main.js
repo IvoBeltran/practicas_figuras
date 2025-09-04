@@ -74,7 +74,14 @@ function agregarParrafo(){
     }
 }
 
-
+function eliminar(){
+  const elimina = document.getElementById("extraParagraphs");
+    if (elimina.lastChild) {
+    elimina.removeChild(elimina.lastChild);
+  } else {
+    alert("No hay párrafos para eliminar.");
+  }
+}
 
 
 
@@ -95,7 +102,11 @@ document.getElementById('btnMoveLeft').addEventListener('click' , izquierda);  /
 document.getElementById('btnMoveRight').addEventListener('click', derecha); // figura a la derecha 
 document.getElementById('btnChangeTitle').addEventListener('click', titulo );
 document.getElementById('btnChangeParagraph').addEventListener('click', parrafo ); // cambiar parrafo 
-document.getElementById('btnChangeParagraph').addEventListener('click', agregarParrafo);
+document.getElementById('btnAddParagraph').addEventListener('click', agregarParrafo);
+document.getElementById('btnRemoveParagraph').addEventListener('click', eliminar);
+
+
+
 })
 
 
