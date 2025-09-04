@@ -11,7 +11,11 @@ function estrella(){
     figure.style.background ="lightblue";
 
 }
-
+function gif(){
+    figure.style.backgroundImage = "url('img/gif.gif)";
+    figure.style.backgroundSize = 'cover';
+ 
+   }
 
 
 
@@ -20,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.getElementById('btnStar').addEventListener('click', estrella ); // ESTRELLA 
 
-
+document.getElementById('btnGif').addEventListener('click', gif );
 
     
 })
