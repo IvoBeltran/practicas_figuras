@@ -47,7 +47,23 @@ function derecha(){
 
 
 
+function titulo(){
+    const mainTitle = document.getElementById("mainTitle");
+    const nuevoTitulo = prompt("Escribe el nuevo título:");
 
+    if (nuevoTitulo) {
+        mainTitle.textContent = nuevoTitulo;
+    }
+}
+
+function parrafo(){
+    const parafo = document.getElementById("mainParagraph");
+    const nuevoParafo = prompt("Escribe el nuevo párrafo:");
+
+    if (nuevoParafo) {
+        parafo.textContent = nuevoParafo;
+    }
+}
 
 
 
@@ -67,7 +83,8 @@ document.getElementById('btnMoveUp').addEventListener('click', arriba); // figur
 document.getElementById('btnMoveDown').addEventListener('click', abajo);  // figura hacia abajo 
 document.getElementById('btnMoveLeft').addEventListener('click' , izquierda);  // figura a la izquierda 
 document.getElementById('btnMoveRight').addEventListener('click', derecha); // figura a la derecha 
-
+document.getElementById('btnChangeTitle').addEventListener('click', titulo );
+document.getElementById('btnChangeParagraph').addEventListener('click', parrafo );
     
 })
 
