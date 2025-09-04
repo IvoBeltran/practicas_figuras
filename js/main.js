@@ -84,7 +84,7 @@ document.getElementById('btnMoveDown').addEventListener('click', abajo);  // fig
 document.getElementById('btnMoveLeft').addEventListener('click' , izquierda);  // figura a la izquierda 
 document.getElementById('btnMoveRight').addEventListener('click', derecha); // figura a la derecha 
 document.getElementById('btnChangeTitle').addEventListener('click', titulo );
-document.getElementById('btnChangeParagraph').addEventListener('click', parrafo );
+document.getElementById('btnChangeParagraph').addEventListener('click', parrafo ); // cambiar parrafo 
     
 })
 
