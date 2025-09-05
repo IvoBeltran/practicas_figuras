@@ -174,11 +174,11 @@ function abrirPestana() {
 
 }
 
-function desLink() {
-    link.removeAttribute("href"); 
-}
-
-
+document.getElementById("btnDisableLink").addEventListener("click", function () {
+  const link = document.getElementById("miEnlace");
+  link.removeAttribute("href");            // Elimina el atributo href
+  link.classList.add("disabled");          // Opcional: cambia el estilo visual
+});
 
 
 

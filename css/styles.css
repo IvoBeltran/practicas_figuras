@@ -130,3 +130,65 @@ img{
 #figure.right{
   transform: translateX(150PX);
 }
+
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== PANEL IZQUIERDO ===== */
+.left {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.left h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #94b3d6;
+    font-size: 24px;
+}
+
+/* ===== BOTONES ===== */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #94b3d6;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s eas
+}
